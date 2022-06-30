@@ -1,0 +1,703 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Add Device | ICICI IOT
+</title>
+<body>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:5000px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!--navbar-->
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #fa760a;
+      }
+      
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      /* Create a right-aligned (split) link inside the navigation bar */
+      .topnav a.split {
+        float: right;
+        background-color: #fa760a;
+        color: white;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <div class="topnav">
+        <img src="..\imgs\ICICILombardLogo.png"  style="height:55px; margin-left: 20px; background-color: #fa670a;" rel="">
+        <a href="#about" class="split">Add Devices</a>
+        <a href="#about" class="split">Home &raquo;</a>
+
+
+      </div>
+    
+  
+    <!-- Left Column -->
+
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffff;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #030d69;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidebar a:hover {
+        color: #fa760a;
+      }
+      
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+      }
+      
+      .openbtn:hover {
+        background-color: #444;
+      }
+      
+      #main {
+        transition: margin-left .5s;
+        padding: 16px;
+      }
+      
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 400px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+      }
+      </style>
+
+
+      </head>
+
+
+
+      <body>
+
+      
+      <div id="mySidebar" class="sidebar">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#" class="list-group-item list-group-action bg-transparent second-text fw-bold">
+          <i class="fa fa-tachometer me-2"></i>&nbsp;Dashboard
+      </a>
+      <a href="#" class="list-group-item list-group-action bg-transparent second-text fw-bold">
+          <i class="fa fa-file-text me-2"></i>&nbsp;Report
+      </a>
+      <a href="#" class="list-group-item list-group-action bg-transparent second-text fw-bold">
+          <i class="fa fa-user-plus me-2"></i>&nbsp;Add Users
+      </a>
+      <a href="#" class="list-group-item list-group-action bg-transparent second-text fw-bold">
+          <i class="fa fa-desktop me-2"></i>&nbsp;Add Devices
+      </a>
+      <a href="#" class="list-group-item list-group-action bg-transparent second-text fw-bold">
+          <i class="fa fa-bar-chart me-2"></i>&nbsp;Graph
+      </a>
+      <a href="#" class="list-group-item list-group-action bg-transparent second-text fw-bold">
+          <i class="fa fa-bell me-2"></i>&nbsp;Notifications
+      </a>
+      <a href="#" class="list-group-item list-group-action bg-transparent second-text fw-bold">
+          <i class="fa fa-file-text me-2"></i>&nbsp;CutOff Report
+      </a>
+      <a href="#" class="list-group-item list-group-action bg-transparent second-text fw-bold">
+          <i class="fa fa-key me-2"></i>&nbsp;Change Password
+      </a>
+      <a href="#" class="list-group-item list-group-action bg-transparent text-danger fw-bold">
+          <i class="fa fa-sign-out me-2"></i>&nbsp;Logout
+      </a>
+      <style>
+        
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #fa760a;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+   content:normal;
+  }
+  ul.breadcrumb li a {
+    color: black;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: black;
+   
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: beige;
+    width:100%
+      }
+  
+.dataTables_length .tbl-data-select {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.dataTables_filter .form-control {
+    margin-bottom: 0px;
+}
+
+  li {
+    float: left;
+  }
+  
+  
+
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a:hover {background-color: blue;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+
+.primary-text{
+    color: #fa760a;
+}
+
+.second-text{
+    color: var(--second-text-color);
+}
+
+.primary-bg{
+    background-color: var(--main-bg-color);
+}
+
+.secondary-bg{
+    background-color: var(--second-bg-color);
+}
+
+.rounded-full{
+    border-radius: 100%;
+}
+
+
+
+#menu-toggle{
+    cursor: pointer;
+}
+
+.list-group-item{
+    border: none;
+    padding: 20px 30px;
+}
+
+.list-group-item.active{
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+   
+    height: 100vh;
+  }
+
+  #password .container #password-row #password-column #password-box #password-form {
+    padding: 2px;
+  }
+  #password .container #password-row #password-column #password-box #password-form  {
+    margin-top: 10px;
+  }
+
+.primary-text{
+    color: var(--main-text-color);
+}
+
+.second-text{
+    color: var(--second-text-color);
+}
+
+.primary-bg{
+    background-color: var(--main-bg-color);
+}
+
+.secondary-bg{
+    background-color: var(--second-bg-color);
+}
+
+.rounded-full{
+    border-radius: 100%;
+}
+
+#wrapper{
+    overflow-x: hidden;
+    background-color: #fdfdfd;
+}
+
+
+#sidebar-wrapper{
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading{
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group{
+    width: 15rem;
+}
+
+#page-content-wrapper{
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper{
+    margin-left: 0;
+}
+
+#menu-toggle{
+    cursor: pointer;
+}
+
+.list-group-item{
+    border: none;
+    padding: 20px 30px;
+}
+
+.list-group-item.active{
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: none;
+}
+
+@media(min-width: 768px){
+    #sidebar-wrapper{
+        margin-left: 0;
+    }
+
+    #page-content-wrapper{
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper{
+        margin-left: -15rem;
+    }
+}
+  
+      </style>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>  
+    
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+         
+      </body>
+    
+    
+
+    <!-- End Left Column -->
+    
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom"> 
+        <div class="w3-container">
+        </div>
+        <div class="w3-container">
+          </div>
+          <div class="container">
+        
+            <form>
+              <div class="form-group">
+                <label for="usr">Device ID :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+              <p></p>
+              <div class="form-group">
+                <label for="pwd">Company/Person name :</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <p></p>
+              <div class="form-group">
+                <label for="usr">Address Line 1 :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+              <p></p>
+              <div class="form-group">
+                <label for="usr">Address Line 2 :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+              <p></p>
+              <div class="form-group">
+                <label for="usr">Country :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+              <p></p>
+              <div class="form-group">
+                <label for="usr">State :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+              <p></p>
+              <div class="form-group">
+                <label for="usr">City :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+              <p></p>
+              <div class="form-group">
+                <label for="usr">Pincode :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+              <p></p>
+              <div class="form-group">
+                <label for="usr">Contact No :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+            </form>
+          </div>
+          
+        <div class="w3-container">
+ 
+            <style>
+              .btn {
+  background-color: #fa760a;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 30px 100px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.btn:hover {
+  background-color: #3dd8e3;
+}
+</style>
+            <button class="btn">Add Device Details</button>
+          
+          <br>
+        </div>
+      </div>
+
+      <!--second box right side-->
+
+      <div class="w3-container w3-card w3-white">
+        <div class="w3-container">
+        <h5> Device Details</h5>
+          <hr>
+        </div>
+
+        <!--entries-->
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="dataTables_length" id="DataTables_Table_0_length">
+                    <label><select class="tbl-data-select">
+                        <option value="10">10</option><option value="20">20</option>
+                        <option value="30">30</option><option value="40">40</option>
+                        <option value="50">50</option><option value="-1">All</option>
+                    </select><span class="r-label">Entries</span></label></div></div>
+                    <div class="col-md-6">
+                        <div id="DataTables_Table_0_filter" class="dataTables_filter">
+                            <label>Search:<input type="search" class="form-control" placeholder="" aria-controls="DataTables_Table_0"></label></div></div>
+
+<!--table-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(1)
+{
+  background-color: #fa760a;
+  color:white;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Table</h2>
+
+<table>
+  <tr class = "tr1">
+  
+    <th>Device ID</th>
+    <th>Company/Person name</th>
+    <th>Address Line 1</th>
+    <th>Address Line 2</th>
+    <th>Country</th>
+    <th>State</th>
+    <th>City</th>
+    <th>Pincode</th>
+    <th>Contact No</th>
+    <th>Edit</th>
+    
+  </tr>
+  <tr>
+    <td>868004029170944</td>
+    <td>Virag</td>
+    <td>Bhiwandi</td>
+    <td></td>
+    <td>India</td>
+    <td>MAHARASHTRA</td>
+    <td>Palghar</td>
+    <td>401107</td>
+    <td>9175921835</td>
+    <td></td>
+    
+  </tr>
+  <tr>
+    <td>868004029171116</td>
+    <td>device3</td>
+    <td>vasai</td>
+    <td></td>
+    <td>India</td>
+    <td>MAHARASHTRA</td>
+    <td>Mumbai</td>
+    <td>401107</td>
+    <td>	9175921837</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>868004029212795</td>
+    <td>	device5</td>
+    <td>VASAI</td>
+    <td>navghar , Vasai East, Palghar 401208</td>
+    <td>India</td>
+    <td>MAHARASHTRA</td>
+    <td>Mumbai</td>
+    <td>401208</td>
+    <td>	91759211837</td>
+    <td></td>
+  </tr>
+  <tr>
+  <td>868004029212860</td>
+    <td>	device2</td>
+    <td>virar</td>
+    <td>virar</td>
+    <td>India</td>
+    <td>MAHARASHTRA</td>
+    <td>Mumbai</td>
+    <td>401107</td>
+    <td>		9175921839</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>868004029216416</td>
+    <td>		device4</td>
+    <td>thane</td>
+    <td></td>
+    <td>India</td>
+    <td>MAHARASHTRA</td>
+    <td>Mumbai</td>
+    <td>	401208</td>
+    <td>		9175921839</td>
+    <td></td>
+  </tr>
+  
+</table>
+<br>
+
+<div class="col-md-6">
+    <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 5 of 5 entries</div></div>
+    <br>
+    
+<!--next and previous-->
+<style>
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: rgb(88, 87, 87);
+  }
+  .one {
+    background-color: #fa760a
+    
+  }
+  
+  .next {
+    background-color: #ddd;
+    color: rgb(88, 87, 87);
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+  </style>
+  </head>
+  <body>
+
+
+  <a href="#" class="previous"> Previous</a>
+  <a href="#" class="one">1 </a>
+  <a href="#" class="next">Next </a>
+<br>
+  <input type="submit" name="ctl00$ContentPlaceHolder1$btnExportReport" value="Export To Excel" id="ContentPlaceHolder1_btnExportReport" class="btn btn-info btn-sm" style="border-radius:15px;padding:5px 30px;">
+  
+
+</body>
+</html>
+
+
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"></h5>
+        
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"></h5>
+      
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+  </div>
+
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+ 
+  <p target="_blank">© 2021 ICICI IOT</p>
+ <p>Developed with  by OTET Infosystems</p>
+
+</footer>
+
+</body>
